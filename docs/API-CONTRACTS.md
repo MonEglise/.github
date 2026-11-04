@@ -13,7 +13,9 @@
 | Méthode | Route | But |
 |---|---|---|
 | POST | `/v1/auth/otp/request` | OTP, limité par utilisateur et IP |
-| POST | `/v1/auth/otp/verify` | validation OTP et session |
+| POST | `/v1/auth/otp/verify` | validation OTP et session (récupération par numéro) |
+| POST | `/v1/auth/device` | session liée à l'appareil, compte sans numéro (PRD-004) |
+| POST | `/v1/me/phone/verify` | validation facultative du numéro du compte courant |
 | GET | `/v1/me` | profil authentifié |
 | PATCH | `/v1/me` | données éditables et préférences |
 | DELETE | `/v1/me` | demande de suppression et suivi selon rétention légale |

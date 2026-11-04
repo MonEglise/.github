@@ -11,6 +11,8 @@ Ce registre sépare les **décisions produit**, les **hypothèses à confirmer**
 | TECH-002 | PostgreSQL, stockage audio privé, Redis au besoin | **Architecture proposée** | à confirmer avec benchmarks/tests |
 | AMEN-001 | Parité souhaitée 1 Amen = 10 XOF | **Modèle proposé** | aucune mise en production sans conformité |
 | AMEN-002 | Entre fidèles symbolique sans cash-out, Églises potentiellement payées | **Modèle proposé** | audit juridique sur valeur transférable |
+| PRD-004 | Accès immédiat : compte lié à l'appareil créé automatiquement, sans OTP ni onboarding ; validation du téléphone facultative (si le numéro existe déjà, l'appareil bascule sur ce compte, sans fusion) | **Orientation retenue** (demande Product Owner) | risque de perte du compte et du solde d'Amens sans numéro validé ; limitation de débit à prévoir sur `POST /v1/auth/device` |
+| LEG-001 | CGU et politique de confidentialité v1.2 (en vigueur le 04/11/2026) ; 1 Amen = 10 XOF ; hébergement Paris (Hostinger) ; contact `shalom@moneglise.ci` | **Validées par un juriste** (déclaré par le Product Owner ; joindre l'avis écrit au dossier) | l'avis écrit reste la preuve requise par `AMENS.md` §6 avant tout flux réel |
 | MVP-001 | 5 intentions mises en avant / jour / communauté | **Hypothèse à tester** | quotas et file d'attente |
 | MVP-002 | Premier parcours : publier une intention, recevoir et écouter une prière vocale | **Jalon MVP** | P0 produit |
 
